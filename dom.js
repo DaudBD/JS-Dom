@@ -33,3 +33,10 @@ document.getElementById('colorButton').addEventListener('click', function () {
   document.getElementById('dom').style.color = 'red';
 });
 
+
+
+const button = document.getElementById("btn");
+
+button.addEventListener(click, function () {
+    alert("Button Clicked !");
+});

@@ -28,9 +28,7 @@ LastName:  <input type="text" name="fname" value="Islam"><br> <br>
 <p class ="demo2">Two</p>
 
 <h1 id="dom">This is a Click Event</h1>
-
-<button type="button" id="colorButton">Click Me</button>
-
+<!-- <button type="button" id="colorButton">Click Me</button> -->
 
 <p id="p1">
 This is a text.
@@ -43,6 +41,36 @@ This is a text.
 <input type="button" value="Show text" onclick="document.getElementById('p1').style.visibility='visible'">
 
 
+<button id="btn"> Click </button>
+<script>
+const button = document.getElementById("btn");
+
+button.addEventListener("keydown", function () {
+    alert("Button Clicked!");
+});
+</script>
+
+
+<div id="box" style="height:100px; width:400px; padding:16px; border:3px solid black; color:red;">
+  Mouse Over The Click
+</div>
+<script>
+const box = document.getElementById("box");
+
+// Let box listen for mouseover
+box.addEventListener("mouseover", function () {
+  box.innerHTML = "Mouse is over me!";
+});
+
+// Let box listen for mouseout
+box.addEventListener("mouseout", function () {
+  box.innerHTML = "Mouse is out!";
+});
+</script>
+
+<script src="Revise.js"></script>
+
    <script src="dom.js" ></script>
 </body>
 </html>
+
